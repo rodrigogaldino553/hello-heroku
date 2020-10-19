@@ -12,5 +12,5 @@ server
     .use(express.urlencoded({ extended: true }))
     .use(express.static('view'))
     .get("/", (req, res) => { res.render('index.html') })
-    .listen(8080)
-console.log('working...')
+    .listen(process.env.PORT || 3000)
+//console.log('working...')
