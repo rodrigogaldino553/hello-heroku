@@ -89,6 +89,11 @@
             transform: rotate(-70deg);
             content: '';
         }
+
+        .container:hover{
+            transition: all 1000ms;
+            transform: rotate(360deg);
+        }
     </style>
 </head>
 
@@ -96,13 +101,17 @@
     <div class="red-outline">
         <div class="white-line">
             <div class="red-line">
-                <div class="container">
+                <div class="container" onclick="run()">
                     <div id="star-five"></div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script>
+        function run() {
+            alert('hello world')
+        }
+    </script>
 </body>
 
 </html>
