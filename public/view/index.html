@@ -1,15 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Heroku</title>
+    <title>Captain Ameican Shield | CSS</title>
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            border: 0;
+            border-radius: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .red-outline {
+            background: red;
+            width: 550px;
+            height: 550px;
+
+        }
+
+        .white-line {
+            background: white;
+            width: 450px;
+            height: 450px;
+        }
+
+        .red-line {
+            background: red;
+            width: 350px;
+            height: 350px;
+        }
+
+        .container {
+            background: blue;
+            width: 250px;
+            height: 250px;
+        }
+
+        #star-five {
+            border-radius: 0;
+            margin: 50px 0;
+            position: relative;
+            display: block;
+            color: white;
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid white;
+            border-left: 100px solid transparent;
+            transform: rotate(35deg);
+        }
+
+        #star-five:before {
+            border-bottom: 80px solid white;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: -45px;
+            left: -65px;
+            display: block;
+            content: '';
+            transform: rotate(-35deg);
+        }
+
+        #star-five:after {
+            position: absolute;
+            display: block;
+            color: white;
+            top: 3px;
+            left: -105px;
+            width: 0px;
+            height: 0px;
+            border-right: 100px solid transparent;
+            border-bottom: 70px solid white;
+            border-left: 100px solid transparent;
+            transform: rotate(-70deg);
+            content: '';
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hulk hipster esteve aqui!</h1>
-    <h2>Caio Passos no beat!</h2>
+    <div class="red-outline">
+        <div class="white-line">
+            <div class="red-line">
+                <div class="container">
+                    <div id="star-five"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
+
 </html>
